@@ -1,0 +1,231 @@
+<!-- ============================================ -->
+<!--                    CTA                       -->
+<!-- ============================================ -->
+
+<section id="cta-1235">
+    <!--Background Image-->
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/people-smiling.jpg">
+        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/people-smiling.jpg">
+        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/people-smiling.jpg" alt="people smiling" width="1058" height="562" aria-hidden="true">
+    </picture>
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Get a Quote</span>
+            <h2 class="cs-title">Get in touch, discuss your needs and get an offer</h2>
+            <p class="cs-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eveniet placeat esse tempore cum eius culpa magnam atque molestiae accusantium.
+            </p>
+            <form class="cs-form" name="Contact Form" method="post">
+                <button class="cs-button-solid cs-submit" type="submit">Contact Us</button>
+            </form>
+        </div>
+    </div>
+    <!--Corner Shapes-->
+    <img class="cs-floater" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/corner-shapes-full.svg" alt="graphic" width="1058" height="562" aria-hidden="true">
+</section>
+                                
+
+<style>
+    /*-- -------------------------- -->
+<---            CTA             -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #cta-1235 {
+        background-color: var(--primary);
+        box-sizing: border-box;
+        overflow: hidden;
+        position: relative;
+    }
+    #cta-1235 .cs-container {
+        width: 100%;
+        max-width: 80rem;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* 48px - 64px */
+        gap: clamp(3rem, 6vw, 4rem);
+    }
+    #cta-1235 .cs-content {
+        /* set text align to left if content needs to be left aligned */
+        text-align: center;
+        width: 100%;
+        max-width: 39.375rem;
+        padding: var(--sectionPadding);
+        /* prevents padding and border from affecting height and width */
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        /* centers content horizontally, set to flex-start to left align */
+        align-items: center;
+        z-index: 20;
+    }
+
+    #cta-1235 .cs-topper,
+    #cta-1235 .cs-text {
+        color: var(--bodyTextColorWhite);
+    }
+    #cta-1235 .cs-text {
+        margin-bottom: 1rem;
+    }
+    #cta-1235 .cs-text:last-of-type {
+        margin-bottom: 2rem;
+    }
+
+    #cta-1235 .cs-form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* 16px - 20px */
+        gap: clamp(1rem, 2.3vw, 1.25rem);
+    }
+    #cta-1235 .cs-input {
+        font-size: 1rem;
+        width: 100%;
+        height: clamp(2.875rem, 5.5vw, 3.5rem);
+        margin: 0;
+        padding: 0;
+        padding-left: 1.25rem;
+        border: none;
+        /* prevents padding from adding to width and height */
+        box-sizing: border-box;
+        display: block;
+    }
+    #cta-1235 .cs-input::placeholder {
+        color: #767676;
+    }
+    #cta-1235 .cs-submit {
+        width: 100%;
+        padding: 0 2rem;
+        border: none;
+        /* prevents flexbox from squishing it */
+        flex: none;
+        background-color: var(--bodyTextColorWhite);
+        color: var(--headerColor);
+    }
+    #cta-1235 .cs-submit:hover {
+        color: var(--bodyTextColorWhite);
+    }
+    #cta-1235 .cs-background {
+        width: 100%;
+        height: 23.75rem;
+        overflow: hidden;
+        display: block;
+        position: relative;
+    }
+    #cta-1235 .cs-background:before {
+        /* yellow slants */
+        content: "";
+        width: 21.875rem;
+        height: 300%;
+        background: var(--primary);
+        opacity: 1;
+        position: absolute;
+        display: block;
+        top: -12.5rem;
+        left: -11.875rem;
+        z-index: 10;
+        transform: rotate(-30deg);
+        outline: 3.125rem solid rgba(237, 167, 8, 0.4);
+    }
+    #cta-1235 .cs-background img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        /* Makes img tag act as a background image */
+        object-fit: cover;
+    }
+    #cta-1235 .cs-floater {
+        width: 70%;
+        max-width: 40.75rem;
+        height: auto;
+        opacity: 0.2;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+    }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #cta-1235 {
+        /* moved padding back to the section container */
+        padding: var(--sectionPadding);
+    }
+    #cta-1235 .cs-container {
+        align-items: center;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    #cta-1235 .cs-content {
+        text-align: left;
+        width: 57%;
+        padding: 0;
+        align-items: flex-start;
+        position: relative;
+        z-index: initial;
+    }
+    #cta-1235 .cs-content:before {
+        /* yellow slants, adjust the rotate degree and right value if you add more content to account for the extra height of the cs-content container */
+        content: "";
+        width: 21.875rem;
+        height: 400%;
+        background: var(--primary);
+        opacity: 1;
+        position: absolute;
+        display: block;
+        top: -31.25rem;
+        right: 1.875rem;
+        z-index: 1;
+        transform: rotate(-30deg);
+        outline: 3.125rem solid rgba(237, 167, 8, 0.4);
+    }
+    #cta-1235 .cs-topper,
+    #cta-1235 .cs-title,
+    #cta-1235 .cs-text {
+        position: relative;
+        z-index: 20;
+        color: var(--bodyTextColorWhite);
+    }
+    #cta-1235 .cs-form {
+        flex-direction: row;
+        justify-content: flex-start;
+        position: relative;
+        z-index: 20;
+    }
+    #cta-1235 .cs-input {
+        width: 100%;
+    }
+    #cta-1235 .cs-submit {
+        width: auto;
+    }
+    #cta-1235 .cs-background {
+        width: 60%;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    #cta-1235 .cs-background:before {
+        /* moved it to the cs-content for easier positioning */
+        display: none;
+    }
+}
+/* Large Desktop - 1300px */
+@media only screen and (min-width: 81.25rem) {
+    #cta-1235 {
+        min-height: 37.5rem;
+        display: flex;
+        align-items: center;
+    }
+}
+
+                                
+</style>
