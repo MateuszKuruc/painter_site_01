@@ -2,7 +2,7 @@
 <!--                    Hero                      -->
 <!-- ============================================ -->
 
-<section id="hero-669">
+<section id="hero">
     <div class="cs-container">
         <div class="cs-content">
             <h1 class="cs-title">Paint Your House Like A Dream Home</h1>
@@ -10,8 +10,8 @@
                 If you use real content in the design process, anytime you reach a review point you’ll end up reviewing and negotiating the content.
             </p>
             <div class="cs-button-group">
-                <a href="" class="cs-button-solid">Make An Appointment</a>
-                <a href="" class="cs-button-transparent">See Our Work</a>
+                <a href="#contact" class="cs-button-solid">Make An Appointment</a>
+                <a href="/gallery/" class="cs-button-transparent">See Our Work</a>
             </div>
             <ul class="cs-stats-group">
                 <li class="cs-item">
@@ -44,7 +44,7 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #hero-669 {
+    #hero {
         /* centers button */
         text-align: center;
         /* 120px - 300px top */
@@ -55,7 +55,7 @@
         z-index: 1;
         padding-top: 10rem;
     }
-    #hero-669:before {
+    #hero:before {
         /* red backgorund box */
         content: "";
         width: 100%;
@@ -68,7 +68,7 @@
         left: 0;
         z-index: -1;
     }
-    #hero-669 .cs-container {
+    #hero .cs-container {
         width: 100%;
         max-width: 80rem;
         margin: auto;
@@ -78,7 +78,7 @@
         flex-direction: column;
         position: relative;
     }
-    #hero-669 .cs-content {
+    #hero .cs-content {
         text-align: center;
         max-width: 39.375rem;
         display: flex;
@@ -86,7 +86,7 @@
         align-items: center;
         flex-direction: column;
     }
-    #hero-669 .cs-title {
+    #hero .cs-title {
         /* 39px - 61px */
         font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
         font-weight: 900;
@@ -98,7 +98,7 @@
         color: var(--bodyTextColorWhite);
         position: relative;
     }
-    #hero-669 .cs-text {
+    #hero .cs-text {
         /* 16px - 20px */
         font-size: clamp(1rem, 1.5vw, 1.25rem);
         line-height: 1.5em;
@@ -109,14 +109,14 @@
         color: var(--bodyTextColorWhite);
         opacity: 0.8;
     }
-    #hero-669 .cs-button-group {
+    #hero .cs-button-group {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
         gap: 0.75rem;
     }
-    #hero-669 .cs-button-solid {
+    #hero .cs-button-solid {
         font-size: 1rem;
         /* 46px - 56px */
         line-height: clamp(2.875rem, 5.5vw, 3.5rem);
@@ -137,7 +137,7 @@
         box-sizing: border-box;
         transition: color 0.3s;
     }
-    #hero-669 .cs-button-solid:before {
+    #hero .cs-button-solid:before {
         content: "";
         position: absolute;
         height: 100%;
@@ -150,13 +150,13 @@
         border-radius: 0.25rem;
         transition: width 0.3s;
     }
-    #hero-669 .cs-button-solid:hover {
+    #hero .cs-button-solid:hover {
         color: #fff;
     }
-    #hero-669 .cs-button-solid:hover:before {
+    #hero .cs-button-solid:hover:before {
         width: 100%;
     }
-    #hero-669 .cs-button-transparent {
+    #hero .cs-button-transparent {
         font-size: 1rem;
         /* 46px - 56px */
         line-height: clamp(2.875rem, 5.5vw, 3.5rem);
@@ -177,7 +177,7 @@
         box-sizing: border-box;
         transition: color 0.3s;
     }
-    #hero-669 .cs-button-transparent:before {
+    #hero .cs-button-transparent:before {
         content: "";
         position: absolute;
         height: 100%;
@@ -190,13 +190,13 @@
         border-radius: 0.25rem;
         transition: width 0.3s;
     }
-    #hero-669 .cs-button-transparent:hover {
+    #hero .cs-button-transparent:hover {
         color: #fff;
     }
-    #hero-669 .cs-button-transparent:hover:before {
+    #hero .cs-button-transparent:hover:before {
         width: 100%;
     }
-    #hero-669 .cs-stats-group {
+    #hero .cs-stats-group {
         width: 100%;
         max-width: 32.625rem;
         margin: 0;
@@ -210,7 +210,7 @@
         justify-content: space-evenly;
         align-items: center;
     }
-    #hero-669 .cs-item {
+    #hero .cs-item {
         list-style: none;
         /* 100px - 150px */
         width: clamp(6.25rem, 16vw, 9.375rem);
@@ -224,7 +224,7 @@
         justify-content: center;
         align-items: center;
     }
-    #hero-669 .cs-desc {
+    #hero .cs-desc {
         /* 14px - 16px */
         font-size: clamp(0.875rem, 2.1vw, 1rem);
         line-height: 1.5em;
@@ -232,7 +232,7 @@
         color: #cdcdcd;
         display: block;
     }
-    #hero-669 .cs-number {
+    #hero .cs-number {
         /* 31px - 49px */
         font-size: clamp(1.9375rem, 3.8vw, 3.0625rem);
         line-height: 1.2em;
@@ -240,7 +240,7 @@
         color: var(--bodyTextColorWhite);
         display: block;
     }
-    #hero-669 .cs-picture {
+    #hero .cs-picture {
         width: 100%;
         max-width: 38.5rem;
         /* Changes at desktop */
@@ -249,7 +249,7 @@
         display: block;
         position: relative;
     }
-    #hero-669 .cs-picture img {
+    #hero .cs-picture img {
         position: absolute;
         top: 0;
         left: 0;
@@ -261,21 +261,21 @@
 }
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-    #hero-669 {
+    #hero {
         /* clips the red box from overflowing the section */
         overflow: hidden;
         padding: clamp(7.5rem, 23.82vw, 18.75rem) 1rem
             clamp(3.75rem, 14.82vw, 9.375rem);
     }
-    #hero-669:before {
+    #hero:before {
         /* removed from section container and added to cs-container for easier horizontal positioning */
         display: none;
     }
-    #hero-669 .cs-container {
+    #hero .cs-container {
         flex-direction: row;
         justify-content: flex-end;
     }
-    #hero-669 .cs-container:before {
+    #hero .cs-container:before {
         /* red backgorund box */
         content: "";
         width: 100vw;
@@ -290,18 +290,18 @@
         z-index: -1;
         transform: translateY(-50%);
     }
-    #hero-669 .cs-content {
+    #hero .cs-content {
         text-align: left;
         width: 53%;
         /* prevents flex-box from squishing it */
         flex: none;
         align-items: flex-start;
     }
-    #hero-669 .cs-stats-group {
+    #hero .cs-stats-group {
         margin-bottom: 0;
         justify-content: space-between;
     }
-    #hero-669 .cs-picture {
+    #hero .cs-picture {
         width: 50vw;
         max-width: 100%;
         /* 714px - 800px */

@@ -1,8 +1,10 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import BannerInterior from "../components/BannerInterior.astro";
+import GalleryPhotos from "../components/Gallery/GalleryPhotos.astro";
 ---
 
 <MainLayout title="Gallery">
-    <BannerInterior title="Gallery" />
+    <BannerInterior title="Gallery" url="gallery" img="/assets/gallery.jpg"/>
+    <GalleryPhotos />
 </MainLayout>

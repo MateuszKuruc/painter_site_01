@@ -1,10 +1,11 @@
 ---
-import MainLayout from "../layouts/MainLayout.astro";
+import MiniLayout from "../layouts/MiniLayout.astro";
 import BannerInterior from "../components/BannerInterior.astro";
+import ContactPage from "../components/Contact/ContactPage.astro";
 
 ---
 
-<MainLayout title="Contact">
-    <BannerInterior title="Contact" />
-
-</MainLayout>
+<MiniLayout title="Contact">
+    <BannerInterior title="Contact" url="contact" img="/assets/contact.jpg" />
+    <ContactPage />
+</MiniLayout>
